@@ -80,7 +80,7 @@ INPUT_PULLUP mode. The sensor then starts driving the line by pulling
 the pin low for approximately 60 microseconds. The sensor then pulls the
 line HIGH for 80 microseconds. This is the Start Bit.
 
-<img title="" src="media/image1.png" alt="" style="width:7.09434in;height:3.41739in">
+<img title="" src="image1.png" alt="" style="width:7.09434in;height:3.41739in">
 
 After the Start Bit the data starts. When the data bit is a ‘1’ the data
 line is pulled high for 70 microseconds. When the data bit is a ‘0’ the
@@ -91,7 +91,7 @@ greater than 100 microseconds the bit is a ‘1’ and if it is less than
 100 microseconds it is a ‘0’. The following figure illustrates reading
 the data.
 
-<img src="media/image2.png" style="width:6.88146in;height:2.92545in" />
+<img title="" src="image2.png" alt="" style="width:6.88146in;height:2.92545in">
 
 ## Other DHT Libraries
 
