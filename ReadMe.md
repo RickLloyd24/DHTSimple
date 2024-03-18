@@ -34,28 +34,28 @@ variables h and t contain the humidity and temperature readings. The
 humidity is relative humidity for 0 to 100 percent. The temperature is
 in degrees Celsius from -40 to 80. The String s values are as follows:
 
-1.  “Sensor Bad” – This occurs when the Sensor did not pull down the
-    data line. It normally occurs when the data pin is incorrect, the
-    sensor is not powered or not connected correctly.
+1. “Sensor Bad” – This occurs when the Sensor did not pull down the
+   data line. It normally occurs when the data pin is incorrect, the
+   sensor is not powered or not connected correctly.
 
-2.  “No Start Bit” – This indicates the Sensor did not pull up the data
-    line. If the wire is long a pull-up resistor may be required.
+2. “No Start Bit” – This indicates the Sensor did not pull up the data
+   line. If the wire is long a pull-up resistor may be required.
 
-3.  “Start Bit Error” – This indicates the start bit was too short or
-    the too long.
+3. “Start Bit Error” – This indicates the start bit was too short or
+   the too long.
 
-4.  “Data Read Error” – This indicates the sensor stopped outputting
-    data.
+4. “Data Read Error” – This indicates the sensor stopped outputting
+   data.
 
-5.  “No Data” – This indicates that all the data was 0 including the
-    checksum.
+5. “No Data” – This indicates that all the data was 0 including the
+   checksum.
 
-6.  Checksum Error – This indicates that the checksum value is
-    incorrect. This could occur if an interrupt happened while reading
-    the sensor.
+6. Checksum Error – This indicates that the checksum value is
+   incorrect. This could occur if an interrupt happened while reading
+   the sensor.
 
-7.  “OK” – The read was successful, and all checks passed. High
-    confidence the readings are correct.
+7. “OK” – The read was successful, and all checks passed. High
+   confidence the readings are correct.
 
 String s = DHT1.getDataRetry(h, t);
 
@@ -80,7 +80,7 @@ INPUT_PULLUP mode. The sensor then starts driving the line by pulling
 the pin low for approximately 60 microseconds. The sensor then pulls the
 line HIGH for 80 microseconds. This is the Start Bit.
 
-<img src="media/image1.png" style="width:7.09434in;height:3.41739in" />
+<img title="" src="media/image1.png" alt="" style="width:7.09434in;height:3.41739in">
 
 After the Start Bit the data starts. When the data bit is a ‘1’ the data
 line is pulled high for 70 microseconds. When the data bit is a ‘0’ the
